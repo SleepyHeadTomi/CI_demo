@@ -1,0 +1,10 @@
+# IDE-miljöer
+.idea
+
+# Miljöer
+.venv
+env
+
+# cached filer
+__pycache__/
+
