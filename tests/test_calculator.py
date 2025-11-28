@@ -14,7 +14,7 @@ def calc_obj():
     return Calculator()
 
 @pytest.mark.parametrize("a, b, expected, data_type", [
-    (1, 2, 2, int),
+    (1, 2, 3, int),
     (-1, 2, 1, int),
     (-1, -2, -3, int),
     (1.5, 2.2, 3.7, float),
@@ -43,7 +43,7 @@ def test_subtract_method_with_multiple_datasets(a, b, expected, data_type, calc_
     (3, 4, 12, int),
     (-3, 4, -12, int),
     (0, 5, 0, int),
-    (2.5, 1.5, 3.7, float)
+    (2.5, 1.5, 3.75, float)
 ])
 def test_multiply_method_with_multiple_datasets(a, b, expected, data_type, calc_obj):
     result = calc_obj.multiply(a, b)
